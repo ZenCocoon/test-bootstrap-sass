@@ -16,14 +16,14 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    sassOptions: {
+      includePaths: [
+        'node_modules/ember-cli-bootstrap-sass/vendor/bootstrap-sass-official/assets/stylesheets'
+      ]
     }
   };
-
-  ENV.sassOptions = {
-    includePaths: [
-      'node_modules/ember-cli-bootstrap-sass/vendor/bootstrap-sass-official/assets/stylesheets'
-    ]
-  }
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
