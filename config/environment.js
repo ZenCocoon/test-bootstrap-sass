@@ -19,6 +19,12 @@ module.exports = function(environment) {
     }
   };
 
+  ENV.sassOptions = {
+    includePaths: [
+      'node_modules/ember-cli-bootstrap-sass/vendor/bootstrap-sass-official/assets/stylesheets'
+    ]
+  }
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
